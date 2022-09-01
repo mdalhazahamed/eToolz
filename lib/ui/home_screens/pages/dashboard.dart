@@ -119,9 +119,10 @@ class Dashboard extends StatelessWidget {
                                   Row(
                                     children: [
                                       Text("\$ 190,000",
-                                          style: myTextStyle20(Colors.green)
-                                          ),
-                                          SizedBox(width:220,),
+                                          style: myTextStyle20(Colors.green)),
+                                      SizedBox(
+                                        width: 220,
+                                      ),
                                       Icon(Icons.arrow_right_alt_outlined,
                                           size: 30, color: Colors.green)
                                     ],
@@ -210,29 +211,28 @@ class Dashboard extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 20),
-                    child: Row(
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                child: Column(
+                  children: [
+                    Row(
                       children: [
                         Text(
                           "Recent transactions",
                           style: myTextStyle(Colors.black),
                         ),
-                        
                       ],
                     ),
-                    
-                  ),
+                    SizedBox(
+                      height: 10,
+                    ),
                   
-                
-                ],
+                  ],
+                ),
               ),
-              
             ],
           ),
-         
         ],
       ),
     );

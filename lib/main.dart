@@ -4,7 +4,7 @@ import 'package:etoolz/ui/authentication/go_it.dart';
 import 'package:etoolz/ui/authentication/login.dart';
 import 'package:etoolz/ui/authentication/notifications.dart';
 import 'package:etoolz/ui/home_screens/bottom_navi_controller.dart';
-
+import 'package:etoolz/ui/home_screens/pages/settings.dart';
 
 import 'package:flutter/material.dart';
 
@@ -27,13 +27,13 @@ class MyApp extends StatelessWidget {
         '/Login_page': (context) => Login_Page(),
         '/forgets': (context) => Forgets(),
         '/notifications': (context) => Notifications(),
-        '/bottomNavController': (context) =>BottomiControllar(),
-        '/go_it': (context) =>GoIt(),
+        '/bottomNavController': (context) => BottomiControllar(),
+        '/go_it': (context) => GoIt(),
       },
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home:  SplashScreen(),
+      home: BottomiControllar(),
     );
   }
 }
