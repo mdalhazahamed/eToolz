@@ -5,11 +5,13 @@ import 'package:etoolz/ui/authentication/login.dart';
 import 'package:etoolz/ui/authentication/notifications.dart';
 import 'package:etoolz/ui/home_screens/bottom_navi_controller.dart';
 import 'package:etoolz/ui/home_screens/pages/settings.dart';
+import 'package:etoolz/ui/home_screens/pages/wallet.dart';
 
 import 'package:flutter/material.dart';
 
 import 'ui/authentication/forgets.dart';
 import 'ui/home_screens/pages/dashboard.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -29,11 +31,12 @@ class MyApp extends StatelessWidget {
         '/notifications': (context) => Notifications(),
         '/bottomNavController': (context) => BottomiControllar(),
         '/go_it': (context) => GoIt(),
+     
       },
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
-      home: BottomiControllar(),
+      home:BottomiControllar(),
     );
   }
 }

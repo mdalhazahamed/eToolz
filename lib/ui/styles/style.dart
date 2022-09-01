@@ -11,7 +11,7 @@ TextStyle myTextStyle22 = TextStyle(
 
 TextStyle myTextStyle(color) => TextStyle(
       fontSize: 15,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w500,
       color: color,
     );
 TextStyle myTextStyle20(color) => TextStyle(
@@ -20,11 +20,24 @@ TextStyle myTextStyle20(color) => TextStyle(
       color: color,
     );
 
-TextStyle myTextStyle14 = TextStyle(
+TextStyle myTextStyle9 (color) => TextStyle(
+  color: color,
+  fontSize: 9,
+  fontWeight: FontWeight.w500,
+);
+
+
+TextStyle myTextStyle12 = TextStyle(
   color: Colors.grey,
   fontSize: 12,
   fontWeight: FontWeight.w500,
 );
+TextStyle myTextStyle14 = TextStyle(
+  color: Colors.black,
+  fontSize: 15,
+  fontWeight: FontWeight.w500,
+);
+
 
 BoxDecoration myBoxDecoration(image) => BoxDecoration(
       image: DecorationImage(
